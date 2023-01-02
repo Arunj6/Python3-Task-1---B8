@@ -1,0 +1,83 @@
+#Q1 Reverse a list in Python
+
+
+#Solution :-
+
+list_numbers = [2, 3, 5, 7]
+
+list_numbers.reverse()
+
+print('Reversed List:', list_numbers)
+
+----------
+
+#Q2
+#Concatenate two lists index-wise
+Write a program to add two lists index-wise. Create a new list that contains the 0th index item from both the list, then the 1st index item, and so on till the last element. any leftover items will get added at the end of the new list.
+
+list1 = ["M", "na", "i", "Ke"]
+list2 = ["y", "me", "s", "lly"]
+Expected output:
+
+['My', 'name', 'is', 'Kelly']
+
+
+#Solution :-
+
+list1 = ["M", "na", "i", "Ke"] 
+list2 = ["y", "me", "s", "lly"]
+list3 = [i + j for i, j in zip(list1, list2)]
+print(list3)
+
+-------------------------
+#Q3
+Turn every item of a list into its square
+Given a list of numbers. write a program to turn every item of a list into its square.
+
+Given: numbers = [1, 2, 3, 4, 5, 6, 7]
+
+#Solution :-
+
+numbers = [1, 2, 3, 4, 5, 6, 7]
+res = []
+for i in numbers:
+        res.append(i * i)
+print(res)
+
+------
+#Q4
+Remove all occurrences of a specific item from a list.
+Given a Python list, write a program to remove all occurrences of item 20.
+
+Given:list1 = [5, 20, 15, 20, 25, 50, 20]
+
+#Solution :-
+
+list1 = [5, 20, 15, 20, 25, 50, 20]
+
+while 20 in list1:
+    list1.remove(20)
+print(list1)
+
+
+-------------------------
+
+#Q5 Add new item to list after a specified item
+Write a program to add item 7000 after 6000 in the following Python List
+Given: list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+
+#Solution :-
+
+list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+
+# understand indexing
+# list1[0] = 10
+# list1[1] = 20
+# list1[2] = [300, 400, [5000, 6000], 500]
+# list1[2][2] = [5000, 6000]
+# list1[2][2][1] = 6000
+
+# solution
+list1[2][2].append(7000)
+list1[2][2][1].append(700)
+print(list1)
