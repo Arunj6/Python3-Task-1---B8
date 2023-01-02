@@ -1,0 +1,84 @@
+# Q1 Reverse a given string
+
+#Solution :-
+str1 = input("Enter the string : ")
+print("Original String is:", str1)
+
+str2 = ''.join(reversed(str1))
+print("Reversed String is:", str2)
+
+--------------
+
+#Q2 Count all letters, digits, and special symbols from a given string
+
+#Solution :-
+string = input("Please Enter your Own String : ")
+
+alphabets = 0
+digits= 0
+symbols = 0
+
+for i in range(len(string)):
+
+    if(string[i].isalpha()):
+
+        alphabets = alphabets + 1
+
+    elif(string[i].isdigit()):
+
+        digits = digits + 1
+
+    else:
+        symbols = symbols + 1
+        
+print("\nTotal Number of Alphabets in this String :  ", alphabets)
+print("Total Number of Digits in this String :  ", digits)
+print("Total Number of Special Characters in this String :  ", symbols)
+
+-------
+# Q3 Remove empty strings from a list of strings
+
+#Solution :-
+
+test_list = ["", "GeeksforGeeks", "", "is", "best", ""]
+ 
+print ("Original list is : " + str(test_list))
+ 
+for i in test_list:
+    if(len(i)==0):
+        test_list.remove(i)
+     
+
+print ("Modified list is : " + str(test_list))
+----------
+
+# Q3 
+Split a string on hyphens
+Write a program to split a given string on hyphens and display each substring.
+str1 = Emma-is-a-data-scientist
+
+#Solution :-
+
+str1 = "Emma-is-a-data-scientist"
+print("Original String is:", str1)
+
+n = str1.split("-")
+
+print("Displaying each substring")
+for i in n:
+    print(i)
+
+-----------------
+
+ #Q5 Find the last position of a given substring
+Write a program to find the last position of a substring “Emma” in a given string.
+
+str1 = "Emma is a data scientist who knows Python. Emma works at google."
+
+#Solution :-
+
+str1 = "Emma is a data scientist who knows Python. Emma works at google."
+print("The String is:", str1)
+
+index = str1.rfind("Emma")
+print("Last occurrence of Emma starts at index:", index)
