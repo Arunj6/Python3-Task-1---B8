@@ -1,0 +1,67 @@
+#Q1
+Write a program to accept two numbers from the user and calculate multiplication
+
+#Solution:-
+
+num1 = int(input("Enter first number "))
+num2 = int(input("Enter second number "))
+
+mul= num1 * num2
+
+print("muliplication result is", mul)
+--------------
+
+#Q2
+
+Convert Decimal number to octal using 
+
+#Solution:-
+
+num1 = int(input("Enter decimal number "))
+
+print("Octal value of :",oct(num1)) 
+print('%o' % num1)
+
+-------------
+#Q3
+Display float number with 2 decimal places using print()
+Given: num = 458.541315
+
+#Solution:-
+
+num = 458.541315
+
+print("result is",'%.2f' % num )
+
+----------------
+
+#Q4 Accept a list of 5 float numbers as an input from the user
+
+#Solution:-
+
+numbers = []
+
+# 5 is the list size
+# run loop 5 times
+for i in range(0, 5):
+    print("Enter number at location", i, ":")
+    # accept float number from user
+    item = float(input())
+    # add it to the list
+    numbers.append(item)
+
+print("User List:", numbers)
+
+-----------
+
+#Q5 Write a program to take three names as input from a user in the single input() function call.
+
+#Solution:-
+
+str1 = input("Enter the First name string :")
+str2 = input("Enter the Second name string: ")
+str3 = input("Enter the third name string: ")
+
+print('Name1:', str1)
+print('Name2:', str2)
+print('Name3:', str3)
